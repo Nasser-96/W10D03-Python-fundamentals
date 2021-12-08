@@ -27,5 +27,5 @@
 
 subjects_grades = { 'Physics': 90, 'Math': 100, 'History': 70 }
 
-print("\nMinimum grade "+list(subjects_grades.keys())[list(subjects_grades.values()).index(min(subjects_grades.values()))])
-print("And Maximum grade is "+list(subjects_grades.keys())[list(subjects_grades.values()).index(min(subjects_grades.values()))])
+print("\nMinimum grade "+min(subjects_grades, key= subjects_grades.get))
+print("And Maximum grade is "+max(subjects_grades, key= subjects_grades.get))
